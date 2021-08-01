@@ -25,7 +25,7 @@ public class Project1 {
   long accountBalance = 50000000L;
       System.out.println("\naccountBalance = 50000000L");
   boolean  doesTheSunRiseFromTheWest = true;
-      System.out.println("\ndoesTheSunRiseFromTheWest? : " + doesTheSunRiseFromTheWest);
+      System.out.println("doesTheSunRiseFromTheWest? : " + doesTheSunRiseFromTheWest);
 
        // Q7.Initials of your name
   char firstInitial = 'S';
