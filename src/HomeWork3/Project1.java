@@ -41,7 +41,17 @@ public class Project1 {
 
     String sentence2 = "We all AFe GOod PFogFAMmeF";
     int sentence2Length = sentence2.length();
-    System.out.print("Length of " + sentence2 + " is : " + sentence2Length );
+    System.out.println("Length of " + sentence2 + " is : " + sentence2Length );
+
+
+    // Question - 3
+
+     String sentence_3 = "ABC Network";
+     String result_3 = "";
+     boolean isStartWith_a = sentence_3.toLowerCase().startsWith("a");
+        System.out.println("isStartWith_a" + isStartWith_a );
+
+
 
 
 
