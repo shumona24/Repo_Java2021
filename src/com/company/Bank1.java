@@ -1,9 +1,8 @@
 package com.company;
-
+import java.util.Scanner;
 public class Bank1 {
     public static void main(String arg[]) {
 
-    class Bank1 {
 
             Scanner KB = new Scanner(System.in);
 
@@ -11,6 +10,7 @@ public class Bank1 {
             System.out.print("How Many Customer U Want to Input : ");
             int n = KB.nextInt();
             Bank C[] = new Bank[n];
+            System.out.println("\n");
             for (int i = 0; i < C.length; i++) {
                 C[i] = new Bank();
                 C[i].openAccount();
@@ -83,4 +83,4 @@ public class Bank1 {
             while (ch != 5);
         }
     }
-}
+

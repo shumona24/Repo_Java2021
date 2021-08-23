@@ -1,38 +1,41 @@
 package com.company;
-
+import java.util.Scanner;
 public class Bank {
-    import java.util.Scanner;
-    public static void main(String[] args) {
 
-        private String name;
-        private String ssn;
-        private String phone;
-        private String account_no;
-        private long balance;
 
-        Scanner KB = new Scanner(System.in);
+    private String name;
+    private String ssn;
+    private String phone;
+    private String account_no;
+    private long balance;
 
-        //method to open an account
-        public void openAccount() {
+    Scanner KB = new Scanner(System.in);
 
-            System.out.print("Enter Name: ");
-            name = KB.next();
-            System.out.print("Enter SSN: ");
-            ssn = KB.next();
-            System.out.print("Enter phone number: ");
-            phone = KB.next();
-            System.out.print("Enter account number: ");
-            account_no = KB.next();
+    //method to open an account
+    public void openAccount() {
 
-            System.out.print("Enter Balance: ");
-            balance = KB.nextLong();
+        System.out.print("Enter Name: ");
+        name = KB.next();
+        System.out.print("Enter SSN: ");
+        ssn = KB.next();
+        System.out.print("Enter phone number: ");
+        phone = KB.next();
+        System.out.print("Enter account number: ");
+        account_no = KB.next();
+
+        System.out.print("Enter Balance: ");
+        balance = KB.nextLong();
+        System.out.println("\n");
+    }
+
+    //method to display account details
+    public void showAccount() {
+
+        System.out.println("\nName -" + name + "\nSSN -" + ssn + "\nPhone -" + phone + " \nAccount No-" + account_no + "\nBalance-" + balance);
+
+        System.out.println("\n");
+
         }
-
-        //method to display account details
-        public void showAccount() {
-            System.out.println("Name -"+name + "\nSSN -" + ssn +"\nPhone -" + phone+" \nAccount No-" + account_no+"\nBalance-"+balance);
-        }
-
         //method to deposit money
         public void deposit() {
             long amt;
@@ -63,4 +66,4 @@ public class Bank {
         }
     }
 
-}
+
